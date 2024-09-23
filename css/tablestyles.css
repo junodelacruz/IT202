@@ -1,0 +1,24 @@
+#activities {
+    background-color: rgb(231, 238, 130);
+}
+#dates {
+    background-color: violet;
+}
+#destination {
+    background-color: #8ab7ff;
+}
+#hotel {
+    background-color: rgb(255, 171, 171);
+}
+
+th {
+    text-align: center;
+    border: thick solid rgb(91, 91, 255);
+    padding: 10px;
+}
+
+body {
+    background-image: linear-gradient(white, rgb(242, 214, 252));
+    min-height: 100vh;
+    overflow-y: hidden;
+}

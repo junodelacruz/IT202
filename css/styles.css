@@ -1,0 +1,27 @@
+.header {
+    line-height: 2;
+    text-align: center;
+    background-color: rgb(78, 78, 78);
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 200px;
+    box-shadow: -10px 10px black;
+}
+
+.courses {
+    font-style: italic;
+    font-weight: bold;
+}
+
+body {
+    background-color: white;
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(126, 126, 126));
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    text-shadow: -3px 3px 0 black;
+    letter-spacing: 3.5px;
+
+    overflow: hidden;
+}   
