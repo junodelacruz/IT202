@@ -6,10 +6,12 @@
         <title>Perfect Plumbing Pros</title>
     </head>
     <body>
+        <div class = "header">
         <h1>PERFECT PLUMBING PROS</h1>
-        <img id="logo" src="/images/plumber-35611_1280.png" alt="logo">
+        </div>
+        <div class = "form">
         <form>
-            <label>First Name: </label>
+            <label id = "firstlabel">First Name: </label>
             <input type="text" id="firstname" name="firstname">
 
             <label>Last Name: </label>
@@ -27,8 +29,20 @@
             <label>Email: </label>
             <input type="text" id="email" name="email">
 
-            <label>Check For Email Confirmation: </label>
-            <input type="checkbox" id = "confirm" name="confirm">
+            <label>Check For Email Confirmation: <input type="checkbox" id = "confirm" name="confirm"></label>
+
+            <label>Select a transaction: </label>
+            <select name = "transaction" id = "transaction">
+                <option value = "Default">Select an option</option>
+                <option value = "Search">Search a plumber's accounts</option>
+                <option value = "Book">Book a customer's appointment</option>
+                <option value = "Cancel">Cancel a customer's appointment</option>
+                <option value = "Request">Request supplies</option>
+                <option value = "Update">Update a customer's records</option>
+                <option value = "Create">Create a new customer</option>
+            </select>
+
         </form>
+    </div>
     </body>
 </html>

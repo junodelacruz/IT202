@@ -1,15 +1,18 @@
 body {
     text-align: center;
-    overflow: hidden;
-    background-color: rgb(110, 129, 146);
     color: white;
-    margin-top: 100px;
+    margin-top: 70px;
+    background-image: url('/images/background.png');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
 }
+
 
 input {
     border-radius: 10px;
     padding: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     border: none;
     outline: none;
     box-shadow: 3px 3px 0 rgb(4, 21, 97);
@@ -19,17 +22,44 @@ label {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+#firstlabel {
+    margin-top: 150px;
 }
 
 h1 {
     font-size: 40px;
-    position: relative;
+    color: black;
 }
 
-#logo {
-    max-width: 200px;
-    max-height: 200px;
-    margin-left: 10px;
-    margin-top: -200px;
+.header {
+    width: 700px;
+    height: 100px;
+    margin-left: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 200px;
+    box-shadow: 5px 5px rgb(0, 0, 0);
+    position: absolute;
+}
+
+.form {
+    line-height: 2;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 70px;
+    border: 3px solid black;
+    background-image: linear-gradient(rgba(145, 170, 192, 0.2), rgba(95, 111, 126, 0.2));
+}
+
+#transaction {
+    appearance: none;
+    box-shadow: 3px 3px 0 rgb(4, 21, 97);
+    min-width: 220px;
+    min-height: 40px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 200px;
 }
