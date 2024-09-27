@@ -32,19 +32,30 @@
             <label for = "confirm">Check For Email Confirmation: <input type="checkbox" id = "confirm" name="confirm"></label>
 
             <p>Select a transaction: </p>
-            <select name = "transaction" id = "transaction" required>
-                <option value = "Default" disabled selected value>Select an option</option>
-                <option value = "Search">Search a plumber's accounts</option>
-                <option value = "Book">Book a customer's appointment</option>
-                <option value = "Cancel">Cancel a customer's appointment</option>
-                <option value = "Request">Request supplies</option>
-                <option value = "Update">Update a customer's records</option>
-                <option value = "Create">Create a new customer</option>
-            </select>
+            <div class="radiobuttons">
+            <label for="search">Search a plumber's accounts</label>
+            <input type = "radio" value = "Search" name="transaction">
+
+            <label for="book">Book a customer's appointment</label>
+            <input type = "radio" value = "Book" name="transaction">
+
+            <label for="cancel">Cancel a customer's appointment</label>
+            <input type = "radio" value = "Cancel" name="transaction">
+
+            <label for="request">Request supplies</label>
+            <input type = "radio" value = "Request" name="transaction">
+            
+            <label for="update">Update a customer's records</label>
+            <input type = "radio" value = "Update" name="transaction">
+            
+            <label for="create">Create a new customer</label>
+            <input type = "radio" value = "Create" name="transaction">
+            <div>
 
             <br>
             <button id = "submit" name = "submit">Submit</button>
             <button id = "reset" name = "reset">Reset</button>
+
 
         </form>
     </div>

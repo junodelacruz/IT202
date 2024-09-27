@@ -78,6 +78,9 @@ button:hover {
     box-shadow: 3px 3px 0 black;
 }
 
-#firstlabel {
+label[for=firstname] {
     margin-top: 150px;
+}
+p{
+    font-size: 30px;
 }
