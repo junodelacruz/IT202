@@ -2,14 +2,13 @@ body {
     text-align: center;
     color: white;
     margin-top: 70px;
-    background-image: url('/images/background.png');
+    background-image: url('images/background.png');
     background-size: cover;
     background-position-x: center;
     backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
 }
-
 
 input {
     border-radius: 10px;
