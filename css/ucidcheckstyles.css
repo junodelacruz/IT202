@@ -1,0 +1,38 @@
+body {
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    background-image: linear-gradient(white, black);
+    min-height: 100vh;
+    font-size: 25px;
+}
+
+input {
+    margin-bottom: 100px;
+    border-radius: 20px;
+    border: none;
+    width:  150px;
+    height:  50px;
+    font-size: 15px;
+}
+
+button {
+    border: 2px solid rgb(0, 0, 0);
+    width:  150px;
+    height:  80px;
+    border-radius: 50px;
+    font-size: 25px;
+}
+
+button:hover {
+    border: 2px solid white;
+    width:  100px;
+    height:  50px;
+    border-radius: 50px;
+    background-color: rgb(94, 94, 94);
+    color: white;
+}
+
+label {
+    display: block;
+}
