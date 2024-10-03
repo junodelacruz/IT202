@@ -12,27 +12,27 @@
         <div class = "form">
         <form>
             <label for = "firstname">First Name: </label>
-            <input type="text" id="firstname" name="firstname" placeholder="John" required>
+            <input type="text" id="firstname" name="firstname" placeholder="John" required> <p>*</p>
 
             <label for = "lastname">Last Name: </label>
-            <input type="text" id="lastname" name="lastname" placeholder="Doe"  required>
+            <input type="text" id="lastname" name="lastname" placeholder="Doe"  required> <p>*</p>
 
             <label for = "password">Password: </label>
-            <input type="password" id="password" name="password" placeholder="*****" required>
+            <input type="password" id="password" name="password" placeholder="*****" required> <p>*</p>
 
             <label for = "idnumber">ID Number: </label>
-            <input type="text" id="idnumber" name="idnumber" placeholder="#123456" required> 
+            <input type="text" id="idnumber" name="idnumber" placeholder="#123456" required> <p>*</p>
 
             <label for = "phonenumber">Phone Number: </label>
-            <input type="text" id="phonenumber" name="phonenumber" placeholder="201-123-4567" required>
+            <input type="text" id="phonenumber" name="phonenumber" placeholder="201-123-4567" required> <p>*</p>
 
             <label for = "email">Email: </label>
-            <input type="text" id="email" name="email" placeholder="johndoe@email.com">
+            <input type="text" id="email" name="email" placeholder="johndoe@email.com"> <p id="requireEmail" style="display: none">*</p>
 
-            <label for = "confirm">Check For Email Confirmation: <input type="checkbox" id = "confirm" name="confirm"></label>
+            <label for = "confirm">Check For Email Confirmation: <input type="checkbox" onclick="emailRequire()" id = "confirm" name="confirm"></label>
 
-            <p>Select a transaction: </p>
-            <select name = "transaction" id = "transaction" required>
+            <p1>Select a transaction: </p1>
+            <select name = "transaction" id = "transaction">
                 <option value = "Default" disabled selected value>Select an option</option>
                 <option value = "Search">Search a plumber's accounts</option>
                 <option value = "Book">Book a customer's appointment</option>
@@ -49,4 +49,5 @@
         </form>
     </div>
     </body>
+    <script src="scripts/pppscript.js"></script>
 </html>

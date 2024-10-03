@@ -2,12 +2,22 @@ body {
     text-align: center;
     color: white;
     margin-top: 70px;
-    background-image: url('/project1/images/background.png');
+    background-image: url('/perfectplumbingpros/images/background.png');
     background-size: cover;
     background-position-x: center;
     backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
+}
+
+p {
+    display: inline;
+    color: rgb(255, 69, 69);
+    font-size: 20px;
+}
+
+p1 {
+    display: block;
 }
 
 input {
@@ -80,7 +90,4 @@ button:hover {
 
 label[for=firstname] {
     margin-top: 150px;
-}
-p{
-    font-size: 30px;
 }
