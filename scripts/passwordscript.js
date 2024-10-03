@@ -3,11 +3,11 @@ function hideShow(){
     if(input.type === "password")
     {
         input.type = "text";
-        input.style = "background-color: rgb(211, 245, 211)";
+        input.style = "background-color: rgb(237, 237, 255)";
     }
     else
     {
         input.type = "password";
-        input.style = "background-color: rgb(237, 237, 255)";
+        input.style = "background-color: rgb(211, 245, 211)";
     }
 }
