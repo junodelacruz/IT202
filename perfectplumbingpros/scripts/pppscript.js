@@ -108,7 +108,7 @@ function verification(){
         {
                 if(emailRequired == true)
                 {
-                    if(emailInput.value == i.email)
+                    if(emailInput.value == plumbers[i].email)
                     {
                         alert("Welcome, " + document.getElementById("firstname").value + " " + document.getElementById("lastname").value + "! Transaction chosen: " + document.getElementById("transaction").value);
                         found = true;
