@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="css/confirmemail.css">
+<html>
+    <head>
+        <title>Email Confirmation</title>
+        <style>
+            body {
+                background-image: linear-gradient(white, rgb(107, 107, 107));
+                min-height: 100vh;
+            }
+            p {
+                display: inline;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Please verify your email address</h1>
+
+        <label for="Email">Email Address:</label>
+        <input type="text" id="email" name="email"></input> <p id="emailMsg">*</p>
+        <br>
+        <label for="Confirm">Confirm Email Address:</label>
+        <input type="text" id="confirm" name="confirm"></input> <p id="confirmMsg">*</p>
+        <br>
+        <button id="submit" onclick="check()">Submit</button>
+    </body>
+
+    <script src="scripts/confirmemailscript.js"></script>
+</html>
