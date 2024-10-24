@@ -7,7 +7,9 @@ const emailInput = document.getElementById("email");
 const password = document.getElementById("password");
 const idNum = document.getElementById("idnumber");
 const phoneNumber = document.getElementById("phonenumber");
-let emailRequired = false;
+const firstName = document.getElementById("firstname"); 
+const lastName = document.getElementById("lastname");
+let emailRequired = false;  
 
 function Plumber(firstname, lastname, password, id, phonenumber, email){
     this.firstname = firstname;
@@ -70,7 +72,17 @@ function toggle() {
 }
 
 function validation(){
-    if(!password.value.match(/^(?=(?:[^A-Z]*[A-Z]){1})(?=(?:[^0-9]*[0-9]){1})(?=(?:[^!@#$%^&*(),.?":{}|<>]*[!@#$%^&*(),.?":{}|<>]){1})[A-Za-z0-9!@#$%^&*(),.?":{}|<>]{1,5}$/))
+    if(!firstName.value.match(/^[a-zA-Z]+$/))
+    {
+        alert("First name must contain only letters.");
+        firstName.select();
+    }
+    else if(!lastName.value.match(/^[a-zA-Z]+$/))
+    {
+        alert("Last name must contain only letters.");
+        lastName.select();
+    }
+    else if(!password.value.match(/^(?=(?:[^A-Z]*[A-Z]){1})(?=(?:[^0-9]*[0-9]){1})(?=(?:[^!@#$%^&*(),.?":{}|<>]*[!@#$%^&*(),.?":{}|<>]){1})[A-Za-z0-9!@#$%^&*(),.?":{}|<>]{1,5}$/))
     {
         alert("Password must be max 5 characters, contain at least one uppercase letter, one special character, and one number. EX) 'Joh1!'");
         password.select();
@@ -88,10 +100,14 @@ function validation(){
     else if(emailRequired == true)
     {
         if(!emailInput.value.match(/@([a-zA-Z]{2,4})\./))
-            {
-                alert("Email must have an @ followed by 2 to 4 characters for the domain and a period. EX) 'johndoe@gmai.com'")
-                emailInput.select();
-            }
+        {
+            alert("Email must have an @ followed by 2 to 4 characters for the domain and a period. EX) 'johndoe@gmai.com'")
+            emailInput.select();
+        }
+        else
+        {
+            return true;
+        }
     }
     else
     {
@@ -102,9 +118,11 @@ function validation(){
 
 function verification(){
     let found = false;
+    var phoneNumberValue = phoneNumber.value.replace("-", "");
+    phoneNumberValue = phoneNumberValue.replace(" ", "");
     for(let i = 0; i < plumbers.length; i++)
     {
-        if(document.getElementById("lastname").value == plumbers[i].lastname && document.getElementById("firstname").value == plumbers[i].firstname && password.value == plumbers[i].password && idNum.value == plumbers[i].id && phoneNumber.value == plumbers[i].phonenumber)
+        if(document.getElementById("lastname").value == plumbers[i].lastname && document.getElementById("firstname").value == plumbers[i].firstname && password.value == plumbers[i].password && idNum.value == plumbers[i].id && phoneNumberValue == plumbers[i].phonenumber)
         {
                 if(emailRequired == true)
                 {
@@ -114,8 +132,6 @@ function verification(){
                         found = true;
                     }
                 }
-                alert("Welcome, " + document.getElementById("firstname").value + " " + document.getElementById("lastname").value + "! Transaction chosen: " + document.getElementById("transaction").value);
-                found = true;
         }
         else
         {
@@ -125,7 +141,7 @@ function verification(){
 
     if(!found)
     {
-        alert("Account not found!");
+        alert("Account not found!: " + document.getElementById("firstname").value + " " + document.getElementById("lastname").value);
     }
 
     event.preventDefault();
