@@ -10,7 +10,7 @@
         
         if($_GET["type"]  === "CustomerDB")
         {
-            $sql = "SELECT CustomerRecords.IDNumber, FirstName, LastName, Street, City, State, ZipCode, PhoneNumber, Type, Date, Cost, SuppliesNeeded, SuppliesOrdered,                      SuppliesReceived
+            $sql = "SELECT CustomerRecords.IDNumber, FirstName, LastName, Street, City, State, ZipCode, PhoneNumber, Type, Date, Cost, SuppliesNeeded, SuppliesOrdered, SuppliesReceived
                     FROM CustomerRecords
                     INNER JOIN CustomerPersonal ON CustomerRecords.IDNumber = CustomerPersonal.IDNumber
                     INNER JOIN CustomerService ON CustomerRecords.IDNumber = CustomerService.IDNumber
