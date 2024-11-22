@@ -11,7 +11,9 @@
         <h1>PERFECT PLUMBING PROS</h1>
         </div>
         <div class = "form">
-        <form>
+        
+        <form method="post" action="dropdownpppform.php" onsubmit="return check()">
+        
             <label for = "firstname">First Name: </label>
             <input type="text" id="firstname" name="firstname" placeholder="John" required> <p>*</p>
 
@@ -28,14 +30,15 @@
             <label for = "phonenumber">Phone Number: </label>
             <input type="text" id="phonenumber" name="phonenumber" placeholder="201-123-4567" required> <p>*</p>
 
-            <label for = "confirm">Check For Email Confirmation: <input type="checkbox" onclick="emailRequire()" id = "confirm" name="confirm"></label>
+            <label for = "confirm">Check For Email Confirmation: <input type="checkbox" onclick="emailRequire()" id = "confirm" name="confirm" value="on"></label>
+            
             <div id = "emailDiv" hidden>
                 <label for = "email">Email: </label>
                 <input type="text" id="email" name="email" placeholder="johndoe@emai.com"> <p>*</p>
-            </div> 
+            </div>  
 
             <p1>Select a transaction: </p1>
-            <select name = "transaction" id = "transaction" required>
+            <select name = "transaction" id = "transaction">
                 <option value = "Default" disabled selected value>Select an option</option>
                 <option value = "Search">Search a plumber's accounts</option>
                 <option value = "Book">Book a customer's appointment</option>
@@ -46,11 +49,11 @@
             </select>
 
             <br>
-            <button id = "submit" name = "submit" onclick="check()">Submit</button>
-            <button id = "reset" name = "reset">Reset</button>
+            <input type="submit" id="submit" name="submit">
+            <input type="reset" name="reset" id="reset">
 
         </form>
     </div>
     </body>
-    <script src="/perfectplumbingpros/scripts/pppscript.js"></script>
+    <script src="/~jtd43/perfectplumbingpros/scripts/pppscript.js"></script>
 </html>
