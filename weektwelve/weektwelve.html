@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Week Eleven Form</title>
+  </head>
+  <body>
+    <p><b>Please enter the name of the dog breed you want to lookup</b></p>
+      <label for="input1">Dog Breed Name: </label>
+      <input type="text" id="input1" name="input1" onkeyup="check()">
+    <p>FOUND: <span id="result"></span></p>
+
+    <script>
+      function check() {
+        var input = document.getElementById('input1').value;
+
+        if (input.length > 0) {
+          var xmlhttp = new XMLHttpRequest();
+          
+          xmlhttp.open('POST', 'weektwelvephp.php', true);
+          xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+          xmlhttp.onload = function () {
+            if (xmlhttp.status == 200) {
+              document.getElementById('result').innerText = xmlhttp.responseText;
+            }
+          };
+
+          xmlhttp.send('input1=' + encodeURIComponent(input));
+        }
+      }
+    </script>
+  </body>
+</html>
