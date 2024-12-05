@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="css/pppstyles.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+<html>
+    <head>
+        <title>Perfect Plumbing Pros</title>
+    </head>
+    <body>
+        <div class = "header">
+        <h1>PERFECT PLUMBING PROS</h1>
+        </div>
+        <div class = "form">
+        <form>
+            <label for = "firstname">First Name: </label>
+            <input type="text" id="firstname" name="firstname" placeholder="John" required> <p>*</p>
+
+            <label for = "lastname">Last Name: </label>
+            <input type="text" id="lastname" name="lastname" placeholder="Doe"  required> <p>*</p>
+
+            <label for = "password">Password: </label>
+            <input type="password" id="password" name="password" placeholder="*****" required> <p>*</p> 
+            <button id="toggleVis" name="toggleVis" onclick="toggle()"><i class="fa fa-eye-slash" id="toggleVisibility"></i></button>
+
+            <label for = "idnumber">ID Number: </label>
+            <input type="text" id="idnumber" name="idnumber" placeholder="#1234" required> <p>*</p>
+
+            <label for = "phonenumber">Phone Number: </label>
+            <input type="text" id="phonenumber" name="phonenumber" placeholder="201-123-4567" required> <p>*</p>
+
+            <label for = "confirm">Check For Email Confirmation: <input type="checkbox" onclick="emailRequire()" id = "confirm" name="confirm"></label>
+            <div id = "emailDiv" hidden>
+                <label for = "email">Email: </label>
+                <input type="text" id="email" name="email" placeholder="johndoe@emai.com"> <p>*</p>
+            </div> 
+
+            <p1>Select a transaction: </p1>
+            <select name = "transaction" id = "transaction">
+                <option value = "Default" disabled selected value>Select an option</option>
+                <option value = "Search">Search a plumber's accounts</option>
+                <option value = "Book">Book a customer's appointment</option>
+                <option value = "Cancel">Cancel a customer's appointment</option>
+                <option value = "Request">Request supplies</option>
+                <option value = "Update">Update a customer's records</option>
+                <option value = "Create">Create a new customer</option>
+            </select>
+
+            <br>
+            <button id = "submit" name = "submit" onclick="check()">Submit</button>
+            <button id = "reset" name = "reset">Reset</button>
+
+        </form>
+    </div>
+    </body>
+    <script src="scripts/pppscript.js"></script>
+</html>

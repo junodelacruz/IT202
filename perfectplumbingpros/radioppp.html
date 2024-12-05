@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="css/pppstyles.css">
+
+<html>
+    <head>
+        <title>Perfect Plumbing Pros</title>
+    </head>
+    <body>
+        <div class = "header">
+        <h1>PERFECT PLUMBING PROS</h1>
+        </div>
+        <div class = "form">
+        <form>
+            <label for = "firstname">First Name: </label>
+            <input type="text" id="firstname" name="firstname" placeholder="John" required>
+
+            <label for = "lastname">Last Name: </label>
+            <input type="text" id="lastname" name="lastname" placeholder="Doe"  required>
+
+            <label for = "password">Password: </label>
+            <input type="password" id="password" name="password" placeholder="*****" required>
+
+            <label for = "idnumber">ID Number: </label>
+            <input type="text" id="idnumber" name="idnumber" placeholder="#123456" required> 
+
+            <label for = "phonenumber">Phone Number: </label>
+            <input type="text" id="phonenumber" name="phonenumber" placeholder="201-123-4567" required>
+
+            <label for = "email">Email: </label>
+            <input type="text" id="email" name="email" placeholder="johndoe@email.com">
+
+            <label for = "confirm">Check For Email Confirmation: <input type="checkbox" id = "confirm" name="confirm"></label>
+
+            <p>Select a transaction: </p>
+            <div class="radiobuttons">
+            <label for="search">Search a plumber's accounts</label>
+            <input type = "radio" value = "Search" name="transaction">
+
+            <label for="book">Book a customer's appointment</label>
+            <input type = "radio" value = "Book" name="transaction">
+
+            <label for="cancel">Cancel a customer's appointment</label>
+            <input type = "radio" value = "Cancel" name="transaction">
+
+            <label for="request">Request supplies</label>
+            <input type = "radio" value = "Request" name="transaction">
+            
+            <label for="update">Update a customer's records</label>
+            <input type = "radio" value = "Update" name="transaction">
+            
+            <label for="create">Create a new customer</label>
+            <input type = "radio" value = "Create" name="transaction">
+            <div>
+
+            <br>
+            <button id = "submit" name = "submit">Submit</button>
+            <button id = "reset" name = "reset">Reset</button>
+
+
+        </form>
+    </div>
+    </body>
+</html>
