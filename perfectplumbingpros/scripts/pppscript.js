@@ -9,6 +9,7 @@ const idNum = document.getElementById("idnumber");
 const phoneNumber = document.getElementById("phonenumber");
 let emailRequired = false;
 
+<<<<<<< HEAD
 function Plumber(firstname, lastname, password, id, phonenumber, email){
     this.firstname = firstname;
     this.lastname = lastname;
@@ -36,6 +37,12 @@ function check()
     {
         verification();
     }
+=======
+
+function check()
+{
+  return validation();
+>>>>>>> 7459849dbd308061361a0240ef71aa189aa77957
 }
 
 function emailRequire() {
@@ -73,22 +80,36 @@ function validation(){
     if(!password.value.match(/^(?=(?:[^A-Z]*[A-Z]){1})(?=(?:[^0-9]*[0-9]){1})(?=(?:[^!@#$%^&*(),.?":{}|<>]*[!@#$%^&*(),.?":{}|<>]){1})[A-Za-z0-9!@#$%^&*(),.?":{}|<>]{1,5}$/))
     {
         alert("Password must be max 5 characters, contain at least one uppercase letter, one special character, and one number. EX) 'Joh1!'");
+<<<<<<< HEAD
+=======
+        return false;
+>>>>>>> 7459849dbd308061361a0240ef71aa189aa77957
         password.select();
     }
     else if(!idNum.value.match(/^.{4}$/))
     {
         alert("ID Number must contain 4 characters. EX) '1234'");
+<<<<<<< HEAD
+=======
+        return false;
+>>>>>>> 7459849dbd308061361a0240ef71aa189aa77957
         idNum.select();
     }
     else if(!phoneNumber.value.match(/^(?:\d[ -]?){10}$/))
     {
+<<<<<<< HEAD
         alert("Phone number must contain 10 digits, and can be separated with spaces or dashes. EX) '201-321 3241'")
+=======
+        alert("Phone number must contain 10 digits, and can be separated with spaces or dashes. EX) '201-321 3241'");
+        return false;
+>>>>>>> 7459849dbd308061361a0240ef71aa189aa77957
         phoneNumber.select();
     }
     else if(emailRequired == true)
     {
         if(!emailInput.value.match(/@([a-zA-Z]{2,4})\./))
             {
+<<<<<<< HEAD
                 alert("Email must have an @ followed by 2 to 4 characters for the domain and a period. EX) 'johndoe@gmai.com'")
                 emailInput.select();
             }
@@ -129,4 +150,13 @@ function verification(){
     }
 
     event.preventDefault();
+=======
+                alert("Email must have an @ followed by 2 to 4 characters for the domain and a period. EX) 'johndoe@gmai.com'");
+                return false;
+                emailInput.select();
+            }
+    }
+    return true;
+    
+>>>>>>> 7459849dbd308061361a0240ef71aa189aa77957
 }

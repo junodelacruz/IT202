@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+    background-image: linear-gradient(white, rgb(223, 188, 255));
+    min-height: 100vh;
+}
+
+input {
+    border: none;
+    outline: none;
+    caret-color: transparent;
+    background-color: transparent;
+}
+
+p {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.header {
+    border: 2px solid black;
+    background-color: rgb(194, 194, 255);
+    color: white;
+    text-shadow: 3px 3px 0 black;
+    box-shadow: 3px 3px 0 black;
+    max-width: 400px;
+    max-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+::placeholder {
+    color: blue;
+    text-align: center;
+}

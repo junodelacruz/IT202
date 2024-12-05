@@ -2,19 +2,36 @@ body {
     text-align: center;
     color: white;
     margin-top: 70px;
+<<<<<<< HEAD
     background-image: url('/perfectplumbingpros/images/background.png');
+=======
+    background-image: url('/~jtd43/perfectplumbingpros/images/background.png');
+>>>>>>> 7459849dbd308061361a0240ef71aa189aa77957
     background-position: center;
     backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+=======
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column; 
+    min-height: 100vh;
+>>>>>>> 7459849dbd308061361a0240ef71aa189aa77957
 }
 
 hr {
     border: 2px solid black;
+<<<<<<< HEAD
     margin-bottom:20px;
+=======
+    margin-bottom: 20px;
+>>>>>>> 7459849dbd308061361a0240ef71aa189aa77957
 }
 
 p {
@@ -65,12 +82,27 @@ h1 {
 }
 
 .header {
+<<<<<<< HEAD
     width: 700px;
     height: 100px;
     background-color: rgb(255, 255, 255);
     border-radius: 200px;
     box-shadow: 5px 5px rgb(0, 0, 0);
     position: absolute;
+=======
+    width: 900px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 200px;
+    box-shadow: 5px 5px rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; 
+    margin-bottom: 30px;
+    position: relative;
+    top: 100px;
+>>>>>>> 7459849dbd308061361a0240ef71aa189aa77957
 }
 
 .form {
@@ -80,6 +112,13 @@ h1 {
     border: 3px solid black;
     background-image: linear-gradient(rgba(118, 139, 156, 0.5), rgba(47, 55, 63, 0.5));
     margin-bottom: 100px;
+<<<<<<< HEAD
+=======
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    padding: 20px; 
+>>>>>>> 7459849dbd308061361a0240ef71aa189aa77957
 }
 
 #transaction {
@@ -90,10 +129,33 @@ h1 {
     border: none;
     border-radius: 10px;
     text-align: center;
+<<<<<<< HEAD
     margin-bottom: 150px;
 }
 
 button {
+=======
+    margin-bottom: 30px;
+}
+
+label[for=firstname] {
+    margin-top: 100px;
+}
+label[for=date] {
+    margin-top: 100px;
+}
+label[for=appID] {
+    margin-top: 100px;
+}
+label[for=need] {
+    margin-top: 100px;
+}
+label[for=street] {
+    margin-top: 100px;
+}
+
+#submit {
+>>>>>>> 7459849dbd308061361a0240ef71aa189aa77957
     margin-bottom: 30px;    
     box-shadow: 3px 3px 0 rgb(4, 21, 97);
     min-width: 220px;
@@ -105,12 +167,71 @@ button {
     margin-left: 15px;
     margin-right: 15px;
 }
+<<<<<<< HEAD
 button:hover {
+=======
+
+#submit:hover {
+>>>>>>> 7459849dbd308061361a0240ef71aa189aa77957
     background-color: rgb(34, 35, 49);
     color: rgb(255, 255, 255);
     box-shadow: 3px 3px 0 black;
 }
 
+<<<<<<< HEAD
 label[for=firstname] {
     margin-top: 150px;
 }
+=======
+#reset {
+    margin-bottom: 30px;    
+    box-shadow: 3px 3px 0 rgb(4, 21, 97);
+    min-width: 220px;
+    min-height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#reset:hover {
+    background-color: rgb(34, 35, 49);
+    color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 0 black;
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    width: 100%; 
+    position: relative;
+    border-radius: 200px;
+}
+
+.navbar-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-list li {
+    margin: 0 15px;
+}
+
+.navbar-list a {
+    color: black; 
+    text-decoration: none; 
+    font-size: 20px;
+    padding: 14px 20px; 
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-list a:hover {
+    background-color: rgb(186, 186, 186); 
+    border-radius: 4px; 
+}
+
+>>>>>>> 7459849dbd308061361a0240ef71aa189aa77957

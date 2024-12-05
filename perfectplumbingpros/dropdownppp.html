@@ -11,7 +11,13 @@
         <h1>PERFECT PLUMBING PROS</h1>
         </div>
         <div class = "form">
+<<<<<<< HEAD
         <form>
+=======
+        
+        <form method="post" action="dropdownpppform.php" onsubmit="return check()">
+        
+>>>>>>> 7459849dbd308061361a0240ef71aa189aa77957
             <label for = "firstname">First Name: </label>
             <input type="text" id="firstname" name="firstname" placeholder="John" required> <p>*</p>
 
@@ -28,11 +34,20 @@
             <label for = "phonenumber">Phone Number: </label>
             <input type="text" id="phonenumber" name="phonenumber" placeholder="201-123-4567" required> <p>*</p>
 
+<<<<<<< HEAD
             <label for = "confirm">Check For Email Confirmation: <input type="checkbox" onclick="emailRequire()" id = "confirm" name="confirm"></label>
             <div id = "emailDiv" hidden>
                 <label for = "email">Email: </label>
                 <input type="text" id="email" name="email" placeholder="johndoe@emai.com"> <p>*</p>
             </div> 
+=======
+            <label for = "confirm">Check For Email Confirmation: <input type="checkbox" onclick="emailRequire()" id = "confirm" name="confirm" value="on"></label>
+            
+            <div id = "emailDiv" hidden>
+                <label for = "email">Email: </label>
+                <input type="text" id="email" name="email" placeholder="johndoe@emai.com"> <p>*</p>
+            </div>  
+>>>>>>> 7459849dbd308061361a0240ef71aa189aa77957
 
             <p1>Select a transaction: </p1>
             <select name = "transaction" id = "transaction">
@@ -46,11 +61,20 @@
             </select>
 
             <br>
+<<<<<<< HEAD
             <button id = "submit" name = "submit" onclick="check()">Submit</button>
             <button id = "reset" name = "reset">Reset</button>
+=======
+            <input type="submit" id="submit" name="submit">
+            <input type="reset" name="reset" id="reset">
+>>>>>>> 7459849dbd308061361a0240ef71aa189aa77957
 
         </form>
     </div>
     </body>
+<<<<<<< HEAD
     <script src="scripts/pppscript.js"></script>
+=======
+    <script src="/~jtd43/perfectplumbingpros/scripts/pppscript.js"></script>
+>>>>>>> 7459849dbd308061361a0240ef71aa189aa77957
 </html>
