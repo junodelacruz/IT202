@@ -1,4 +1,4 @@
-$("#listen").on("click", function() {
+window.addEventListener("load", function() {
     refresh();
 });
 

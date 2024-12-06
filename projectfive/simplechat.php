@@ -18,6 +18,7 @@
         <?php
             include("../perfectplumbingpros/connect.php");
             // list of users
+            
             $usernameSQL = "SELECT `Name` FROM `Chat`";
             $usernameQuery = mysqli_query($conn, $usernameSQL);
 
@@ -54,8 +55,6 @@
             <h2>Messages</h2>
                 <label for="usernameCheck">Enter valid username: </label>
                 <input type="text" id="usernameCheck" name="usernameCheck"><br>
-
-                <button id="listen">Listen</button>
                 <!-- Message Output -->
                 <p id="output"></p>
             </div>

@@ -17,15 +17,6 @@ input {
     border: none;
     font-family: 'Courier New', Courier, monospace;
 }
-button {
-    border-radius: 5px;
-    padding: 10px;
-    border: none;
-    background-color: white;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.205);
-    cursor: pointer;
-    font-family: 'Courier New', Courier, monospace;
-}
 textarea:focus, input:focus {
     outline: none;
 }
